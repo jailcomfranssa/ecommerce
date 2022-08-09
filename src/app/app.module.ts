@@ -13,6 +13,11 @@ import { BrandsProductsComponent } from './templete/main/brands-products/brands-
 import { PriceRangeComponent } from './templete/main/price-range/price-range.component';
 import { ShippingComponent } from './templete/main/shipping/shipping.component';
 import { FeaturesItemsComponent } from './templete/main/features-items/features-items.component';
+import { HomeComponent } from './page/home/home.component';
+import { LayoutComponent } from './layout/layout.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { SliderComponent } from './templete/slider/slider.component';
+
 
 @NgModule({
   declarations: [
@@ -27,10 +32,14 @@ import { FeaturesItemsComponent } from './templete/main/features-items/features-
     BrandsProductsComponent,
     PriceRangeComponent,
     ShippingComponent,
-    FeaturesItemsComponent
+    FeaturesItemsComponent,
+    HomeComponent,
+    LayoutComponent,
+    SliderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
